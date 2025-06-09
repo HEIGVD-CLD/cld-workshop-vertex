@@ -49,17 +49,17 @@ If we had a team of 5 people using gemini 2.5 pro. Each person would do an avera
 
 ### Pros
 
-- Unified platform
-- Scalability
-- For beginners: AutoML
-- For experts: Custom Training
+- Unified platform - Vertex AI brings data prep, feature store, AutoML, custom training, pipelines, deployment, and monitoring into one unified console—streamlining workflows under a single UI/API.
+- Scalability - It scales effortlessly from small experiments to enterprise-grade workloads, with support for distributed training, GPUs/TPUs, and managed services.
+- For beginners: AutoML - With its no-code AutoML tools for vision, text, video, and tabular data, beginners can train production-grade models with minimal coding.
+- For experts: Custom Training - Experts get full control via custom training jobs—using TensorFlow, PyTorch, XGBoost, custom containers, pipelines, and hyperparameter tuning.
 
 ### Cons
 
-- Vendor lock-In (Google Cloud)
-- Hard to predict cost
-- Limited open source community
-- Steep learning curve
+- Vendor lock-In (Google Cloud) - Deep reliance on GCP services like BigQuery, Cloud Storage, and Pipelines makes migrating to other clouds overly complex and costly.
+- Hard to predict cost - Pricing involves multiple dimensions—training, endpoints, storage, AutoML—leading to billing surprises even for small or educational use.
+- Limited open source community - Despite supporting frameworks like TensorFlow and PyTorch, the platform has limited OSS ecosystem and documentation, especially around advanced features and custom containers.
+- Steep learning curve - Beginners and even seasoned ML teams face a steep climb mastering the platform—custom jobs, pipelines, containers, workbench—and documentation is often fragmented or outdated.
 
 ## Alternatives
 
