@@ -25,7 +25,24 @@ Vertex AI Agent Builder is a managed service on Google Cloud that allows to crea
 
 ## Pricing
 
+| Component | Description |
+|-----------|-------------|
+| Token processed | Price per 1000 input and output tokens |
+| Used model | The cost varies depending on the model (e.g. Gemini 2.5 Pro) |
+| Agent Engine | CPU/memory billing for customised use |
 
+### Scenario
+
+If we had a team of 5 people using gemini 2.5 pro. Each person would do an average of 50 prompts per day for 20 days :
+
+**Prompt/month** : 5 * 50 * 20 = 5000 prompts
+**Total tokens** : 5000 * 1500 = 7m5 tokens
+
+**Cost of tokens** :
+- input : 2m5 * 0.00125 = $3.13
+- output : 5m * 0.01 = $50
+
+**Total** : $53.13
 
 ## Advantages and disadvantages
 
