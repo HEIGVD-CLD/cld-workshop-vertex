@@ -45,6 +45,13 @@ Vertex AI Agent Builder is a managed service on Google Cloud that allows to crea
 
 ## Alternatives
 
+| Platform                             | Lock‑In | Easy to Use      | MLOps Features                | AutoML | GenAI Ready       |
+|--------------------------------------|:-------:|:----------------:|:-----------------------------:|:------:|:-----------------:|
+| **Google Vertex AI Agent Builder** (ours)   | High    | ☑☑☑     | ☑☑☑☑  | ☑☑☑☑ | ☑☑☑☑ |
+| **AWS Bedrock Agents**               | High    | ☒☒      | ☑☑☑☑☑ | ☑☑☑  | ☑☑  |
+| **Azure AI Agents**                  | High    | ☑☑     | ☑☑☑☑  | ☑☑☑☑  | ☑☑☑  |
+| **OpenAI Responses API + Agents SDK**| Medium  | ☑☑☑☑  | ☑☑☑☑  | –  | ☑☑☑☑ |
+
 ## How to get started
 
 ### Prerequisites
