@@ -8,12 +8,13 @@ Date: June 9, 2025
 
 ## What is Agent Builder
 
-_In what real-world scenario(s) SSC would be particular useful for a Swiss SME?
-What problem does it solve or what does it make possible that was impossible
-before?_
+Vertex AI Agent Builder is a managed service on Google Cloud that allows to create and manage conversational agents (like a chatbot or virtual assistant). It offers a no-code and code-first to design prompt-based agents and connect to external API.
 
-_What does SSC do? How does it interact with the outside world? What are the
-inputs and the outputs?_
+**Problems solved using this tool** :
+
+- Automatically answers frequently asked questions 24/7 to reduce human workload
+- Interprets and summarises internal documents for complex access to information
+- Customised tools to link the agent to databases for difficult integration
 
 ## Use cases
 
@@ -24,9 +25,7 @@ inputs and the outputs?_
 
 ## Pricing
 
-_What are the cost components? What is being measured?_
 
-_Monthly cost example based on a real-world scenario_
 
 ## Advantages and disadvantages
 
@@ -48,12 +47,58 @@ _Monthly cost example based on a real-world scenario_
 
 ## How to get started
 
-_What are the prerequisites for using SSC?_
+### Prerequisites
 
-_Steps to prepare for using SSC._
+- GCP account
+- Activation of Vertex AI and Agent Builder
+- Billing or free tier activated
 
-_A first simple hello-world usage example_
+### Starting stage
 
-## Common commands/operations/configurations/usage patterns
+1. First, you need to go to the GitHub repo which contains some agents developped by Google at [this link](https://github.com/google/adk-samples/tree/main)
+2. Now select an agent you find interesting
+3. You need to login to your GCP account
 
-_What are the most common ways to use SSC?_
+```bash
+gcloud auth login
+```
+
+4. Now you can enable some APIs
+
+```bash
+gcloud services enable aiplatform.googleapis.com
+```
+
+5. Clone the repository and go to this folder
+
+```bash
+git clone https://github.com/google/adk-samples.git
+cd adk-samples/python/agents/customer-service
+```
+
+6. Install Poetry if u dont have it
+
+```bash
+pip install poetry
+```
+
+7. Install dependencies using Poetry and activate the virtual env
+
+```bash
+poetry install
+poetry env activate
+```
+
+8. Rename the ``.env_example`` to ``.env`` and fill the file with these values
+```bash
+GOOGLE_CLOUD_PROJECT=YOUR_PROJECT_ID
+GOOGLE_GENAI_USE_VERTEXAI=1
+GOOGLE_CLOUD_LOCATION=us-central1
+```
+
+9. Finally run the agent and the web server
+
+```bash
+adk run customer_service
+adk web
+```
