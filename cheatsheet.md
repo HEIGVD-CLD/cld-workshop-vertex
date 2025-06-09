@@ -43,7 +43,7 @@ If we had a team of 5 people using gemini 2.5 pro. Each person would do an avera
 - input : 2m5 * 0.00125 = $3.13
 - output : 5m * 0.01 = $50
 
-**Total** : $53.13
+**Total** : $53.13/month
 
 ## Advantages and disadvantages
 
