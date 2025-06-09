@@ -36,6 +36,7 @@ Vertex AI Agent Builder is a managed service on Google Cloud that allows to crea
 If we had a team of 5 people using gemini 2.5 pro. Each person would do an average of 50 prompts per day for 20 days :
 
 **Prompt/month** : 5 * 50 * 20 = 5000 prompts
+
 **Total tokens** : 5000 * 1500 = 7m5 tokens
 
 **Cost of tokens** :
